@@ -17,6 +17,7 @@ body {
   height: 100%;
   overflow-y: auto;
   width: 100%;
+  position: relative;
   padding: 30px 80px;
 }
 .app-preview {
@@ -117,4 +118,97 @@ body {
 }
 a {
   text-decoration: none;
+}
+
+#modal-bg {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.464);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.modal {
+  backdrop-filter: blur(17px) saturate(200%);
+  -webkit-backdrop-filter: blur(17px) saturate(200%);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  background-color: rgba(98, 98, 98, 0.23);
+  padding: 16px;
+  text-align: right;
+}
+.modal p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #cd4d4dfe;
+  border: 1px solid #cd4d4dfe;
+  color: #ffffff;
+  font-weight: 500;
+}
+#confirmDownload {
+  margin-right: 10px;
+  background-color: #0ab473;
+  border: 1px solid #0ab473;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  #modal-bg {
+    display: flex;
+  }
+  .app-preview {
+    display: none;
+  }
+  .qr-section {
+    display: none;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    padding: 30px 20px;
+  }
+  .content h2 {
+    font-size: 32px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .download-card {
+    width: fit-content;
+    padding: 10px;
+    min-width: 280px;
+  }
+  .download-desc {
+    font-size: 12px;
+    text-align: left;
+  }
+  .download-title {
+    font-size: 16px;
+    text-align: left;
+  }
+  .download-section {
+    justify-content: center;
+  }
 }

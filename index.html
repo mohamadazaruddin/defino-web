@@ -18,7 +18,15 @@
     <title>Defino</title>
   </head>
   <body>
+    <script src="script.js"></script>
     <div class="container">
+      <div id="modal-bg">
+        <div class="modal">
+          <p>Are you sure you want to download the file?</p>
+          <button id="confirmDownload" onclick="download()">Download</button>
+          <button id="cancelDownload" onclick="cancel()">Cancel</button>
+        </div>
+      </div>
       <div class="header">
         <img src="images/appLogo.png" alt="" />
         <p>Defino</p>
@@ -28,7 +36,7 @@
           <h2><span>Defino, </span>Your Pocket Dictionary & More!</h2>
           <p>
             Defino is your smart, easy-to-use dictionary app designed to help
-            you find <br />word meanings, synonyms, and more—anytime, anywhere.
+            you find word meanings, synonyms, and more—anytime, anywhere.
           </p>
 
           <div class="download-section">
@@ -46,19 +54,21 @@
                 </div>
               </a>
               <!-- iOS Download Card -->
-              <div style="margin-top: 30px" class="download-card">
-                <img src="images/apple.png" alt="iOS Logo" />
-                <div>
-                  <div class="download-desc">
-                    Install Defino on your Apple device
+              <a href="/application-3c7489b0-8fcf-426f-b97f-c9ba100fbbd4.aab">
+                <div style="margin-top: 30px" class="download-card">
+                  <img src="images/apple.png" alt="iOS Logo" />
+                  <div>
+                    <div class="download-desc">
+                      Install Defino on your Apple device
+                    </div>
+                    <div class="download-title">Download for iOS</div>
                   </div>
-                  <div class="download-title">Download for iOS</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="qr-section">
               <img
-                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://mohamadazaruddin.github.io/defino-web/application-3c7489b0-8fcf-426f-b97f-c9ba100fbbd4.abb"
+                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://mohamadazaruddin.github.io/defino-web"
                 alt="Download Defino QR Code"
               />
             </div>
