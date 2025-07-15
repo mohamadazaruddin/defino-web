@@ -12,8 +12,8 @@ function download() {
   const link = document.createElement("a");
   //link to the uploaded image
   //  in your local storage
-  link.href = "application-3c7489b0-8fcf-426f-b97f-c9ba100fbbd4.aab";
-  link.download = "application-3c7489b0-8fcf-426f-b97f-c9ba100fbbd4.aab";
+  link.href = "defino.apk";
+  link.download = "defino.apk";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
